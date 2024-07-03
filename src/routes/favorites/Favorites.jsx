@@ -21,7 +21,7 @@ const Favorites = () => {
             />
           ))
         ) : (
-          <p>No favorite products.</p>
+          <p className='font-medium text-xl'>No favorite products.</p>
         )}
       </div>
     </div>

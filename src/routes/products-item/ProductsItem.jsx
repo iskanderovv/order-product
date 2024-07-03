@@ -29,8 +29,8 @@ const ProductsItem = ({ id, title, image, reviews, rating, price, desc }) => {
         <img title={title} src={image} className="h-[300px] select-none object-contain rounded-t transform transition duration-300 ease-in-out hover:scale-105" alt={title} />
       </Link>
       <div className="bg-white py-4 px-1">
-        <h3 className="font-medium">{truncate(title, 23)}</h3>
-        <p className="text-xs text-gray-500 py-2">{truncate(desc, 70)}</p>
+        <h3 className="font-medium">{truncate(title, 20)}</h3>
+        <p className="text-xs text-gray-500 py-2">{truncate(desc, 60)}</p>
         <div className="flex justify-between items-center mt-4">
           <span>${price}</span>
           <div className="flex items-center gap-1">
