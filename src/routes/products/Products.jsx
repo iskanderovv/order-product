@@ -21,9 +21,10 @@ const Products = () => {
 
   return (
     <div className='max-w-[1200px] mx-auto px-4 '>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 my-14 place-items-center'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-8 my-14 place-items-center'>
         {data?.map(product => (
           <ProductsItem
+            key={product.id}
             image={product.thumbnail}
             title={product.title}
             rating={product.rating}
