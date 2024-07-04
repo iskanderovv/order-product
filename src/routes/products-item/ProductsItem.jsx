@@ -10,7 +10,7 @@ const ProductsItem = ({ id, title, image, reviews, rating, price, desc }) => {
   const [showFavoriteIcon, setShowFavoriteIcon] = useState(isFavorite);
 
   const truncate = (text, num) => (text.length > num ? text.slice(0, num) + '...' : text);
-
+console.log(favorites);
   const handleFavoriteToggle = () => {
     setShowFavoriteIcon(!showFavoriteIcon);
     if (isFavorite) {
